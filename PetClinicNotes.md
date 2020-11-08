@@ -2,6 +2,7 @@
 
 
 Lect 47 --Done
+``` 
 https://github.com/springframeworkguru/sfg-pet-clinic
 
 https://github.com/springframeworkguru/sfg-pet-clinic/tree/master/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model
@@ -17,27 +18,28 @@ Person
 Pet
 PetType
 Vet
-
+``` 
 --------
 
 Lect 48  --Done
-New>Module>Maven>Next>Artificate-->pet-clinic-data >finish
+```  New>Module>Maven>Next>Artificate-->pet-clinic-data >finish
 
 New>Module>Maven>Artificate-->pet-clinic-web
-
+``` 
 
 -----Lect 49
-
+``` 
 mvn release:prepare
 
 <scm>
     
     
 mvn release:perform
+``` 
 ---------
 
 Lect 50 --Done
-
+``` 
 pet-clinic-data
     services
         OwnerService [4.18]
@@ -45,11 +47,11 @@ pet-clinic-data
         VetServices
 
 Issue- Implment Interface for services, Closes #5
-
+``` 
 -----------
 
 Lect 51  --Done
-
+``` 
 pet-clinic-data
     model
         BaseEntity [2]
@@ -58,12 +60,12 @@ pet-clinic-data
         PetType
         
 adding base entity close#10        
-
+``` 
 -------
 Section 4
 Lect 61  --Done
 
-pet-clinic-data
+```  pet-clinic-data
     services
         CrudService
             findAll
@@ -74,11 +76,12 @@ pet-clinic-data
         OwnerService
         PetServices
         VetSErvices
+```         
         
 ---------------------
 Lect 62 --Done
 
-pet-clinic-data
+```  pet-clinic-data
     services
         map
             AbstractMapService
@@ -109,15 +112,16 @@ pet-clinic-data
                    return super.save(object.getId(),object);
                 delete
                 deleteById
-                
+  ```               
 -----------
 Lect 63--Done
 
-pet-clinic-web
+``` pet-clinic-web
     application.properties
         spring.banner.image.location=vizsla.jpg
     vizsla.jpg
     run it
+```     
 -------
 
 Lect 64 -- Done
