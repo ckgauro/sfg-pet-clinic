@@ -78,6 +78,38 @@ pet-clinic-data
 ---------------------
 Lect 62 --Ongoing
 
+pet-clinic-data
+    services
+        map
+            AbstractMapService
+                private map
+                findAll
+                findById
+                save [3:30] look
+                deleteById
+                delete
+            OwnerServiceMap
+                findAll
+                findById
+                save[8:30]
+                      return super.save(object.getId(),object);
+                delete
+                deleteById
+            PetServiceMap
+                findAll
+                findById
+                save
+                   return super.save(object.getId(),object);
+                delete
+                deleteById
+            VetServiceMap
+                findAll
+                findById
+                save
+                   return super.save(object.getId(),object);
+                delete
+                deleteById
+                
         
 
         
