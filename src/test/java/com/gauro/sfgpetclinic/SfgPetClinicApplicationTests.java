@@ -1,4 +1,4 @@
-package com.gauro.demo;
+package com.gauro.sfgpetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

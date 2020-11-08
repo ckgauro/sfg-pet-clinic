@@ -1,4 +1,4 @@
-package com.gauro.demo;
+package com.gauro.sfgpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
