@@ -120,7 +120,56 @@ pet-clinic-web
     run it
 -------
 
-Lect 64 --
+Lect 64 -- Ongoing
+pet-clinic-web
+    resourcs
+        templates
+            index.html
+                <h1 th:text="'Index Page'">Index Page</h1>
+    java
+        controller
+            IndexController
+                index
+[run it]
+localhost:8080/index.html
+
+
+-----------
+
+Lect 65 
+
+--------
+Lect 66
+pet-clinic-web
+    resourcs
+        templates
+            vets
+                index.html
+    java
+        controller
+            VetController
+                listVets
+  [run it]
+localhost:8080/vets
+------------
+Lect 67
+pet-clinic-web
+    resourcs
+        templates
+            owners
+                index.html
+    java
+        controller
+            OwnerController
+                listOwners
+  [run it]
+localhost:8080/owners
+              
+                
+
+
+        
+
     
 
 
