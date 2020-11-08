@@ -139,7 +139,7 @@ localhost:8080/index.html
 Lect 65 
 
 --------
-Lect 66  --Ongoing
+Lect 66  --Done
 ```
 
 pet-clinic-web
@@ -155,7 +155,7 @@ pet-clinic-web
 localhost:8080/vets
 ```
 ------------
-Lect 67
+Lect 67 --Done
 ```pet-clinic-web
     resourcs
         templates
