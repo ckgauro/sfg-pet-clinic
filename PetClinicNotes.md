@@ -76,7 +76,7 @@ pet-clinic-data
         VetSErvices
         
 ---------------------
-Lect 62 --Ongoing
+Lect 62 --Done
 
 pet-clinic-data
     services
@@ -110,6 +110,18 @@ pet-clinic-data
                 delete
                 deleteById
                 
-        
+-----------
+Lect 63--Done
+
+pet-clinic-web
+    application.properties
+        spring.banner.image.location=vizsla.jpg
+    vizsla.jpg
+    run it
+-------
+
+Lect 64 --
+    
+
 
         
