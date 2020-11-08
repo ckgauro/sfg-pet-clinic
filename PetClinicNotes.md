@@ -36,7 +36,7 @@ mvn release:prepare
 mvn release:perform
 ---------
 
-Lect 50 --Ongoing
+Lect 50 --Done
 
 pet-clinic-data
     services
@@ -48,7 +48,7 @@ Issue- Implment Interface for services, Closes #5
 
 -----------
 
-Lect 51
+Lect 51  --Ongoing
 
 pet-clinic-data
     model
