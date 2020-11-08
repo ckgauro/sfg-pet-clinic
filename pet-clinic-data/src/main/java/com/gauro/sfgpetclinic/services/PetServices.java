@@ -8,10 +8,6 @@ import java.util.Set;
 /**
  * @author Chandra
  */
-public interface PetServices {
-    Pet findById(Long id);
+public interface PetServices extends CrudService<Pet, Long>{
 
-    Pet save(Pet pet);
-
-    Set<Pet> findAll();
 }

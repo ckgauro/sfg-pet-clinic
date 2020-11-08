@@ -48,7 +48,7 @@ Issue- Implment Interface for services, Closes #5
 
 -----------
 
-Lect 51  --Ongoing
+Lect 51  --Done
 
 pet-clinic-data
     model
@@ -60,9 +60,23 @@ pet-clinic-data
 adding base entity close#10        
 
 -------
+Section 4
+Lect 61  --Done
 
-Lect 61  --Revise
-
+pet-clinic-data
+    services
+        CrudService
+            findAll
+            findById
+            save
+            deelte
+            deleteById
+        OwnerService
+        PetServices
+        VetSErvices
+        
+---------------------
+Lect 62 --Ongoing
 
         
 
