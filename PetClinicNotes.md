@@ -120,8 +120,8 @@ pet-clinic-web
     run it
 -------
 
-Lect 64 -- Ongoing
-pet-clinic-web
+Lect 64 -- Done
+``` pet-clinic-web
     resourcs
         templates
             index.html
@@ -132,14 +132,14 @@ pet-clinic-web
                 index
 [run it]
 localhost:8080/index.html
-
+```
 
 -----------
 
 Lect 65 
 
 --------
-Lect 66
+```Lect 66  --Ongoing
 pet-clinic-web
     resourcs
         templates
@@ -151,9 +151,10 @@ pet-clinic-web
                 listVets
   [run it]
 localhost:8080/vets
+```
 ------------
 Lect 67
-pet-clinic-web
+```pet-clinic-web
     resourcs
         templates
             owners
@@ -165,6 +166,7 @@ pet-clinic-web
   [run it]
 localhost:8080/owners
               
+```              
                 
 
 
