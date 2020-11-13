@@ -177,7 +177,7 @@ localhost:8080/owners
 ---------      
 # Section 5
 
-Lect 80  ---Ongoing
+Lect 80  ---Done
 
 ```
 {revise Video}
@@ -192,7 +192,7 @@ pet-clinic-web
 ```
 --------------
 
-Lect 81 
+Lect 81  ---Done
 ```
 
 {revise Video}
@@ -201,7 +201,7 @@ Lect 81
 ```
 --------------
 
-Lect 82 
+Lect 82  ---Done
 ```
 
 {revise Video}
@@ -214,7 +214,7 @@ localhost:8080/owners/index
 ```
 --------------
 
-Lect 83 
+Lect 83  ---Done
 ```
 
 {revise Video}
@@ -228,7 +228,7 @@ localhost:8080/vet/index
 ```
 --------------
 
-Lect 84 
+Lect 84  ---Done
 ```
 
 {revise Video}

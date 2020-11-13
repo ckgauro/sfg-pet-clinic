@@ -2,10 +2,7 @@ package com.gauro.sfgpetclinic.services.map;
 
 import com.gauro.sfgpetclinic.model.BaseEntity;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Chandra
@@ -20,8 +17,15 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         return map.get(id);
     }
 
-    T save(ID id, T object){
-       map.put(id, object);
+    T save( T object){
+       if(object!=null){
+           if(object.getId()==null){
+               object.setId(getNextId());
+           }
+           map.put(object.getId(),object);
+       }else{
+           throw new RuntimeException("Object cannot be null");
+       }
        return object;
     }
 
@@ -31,6 +35,16 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
 
     void delete(T object){
         map.entrySet().removeIf(entery-> entery.getValue().equals(object));
+    }
+    private Long getNextId(){
+        Long nextId=null;
+        try{
+            nextId= Collections.max(map.keySet())+1;
+
+        }catch (NoSuchElementException e){
+            nextId=1L;
+        }
+        return nextId;
     }
 
 
