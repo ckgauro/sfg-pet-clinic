@@ -2,13 +2,14 @@ package com.gauro.sfgpetclinic.services.map;
 
 import com.gauro.sfgpetclinic.model.Pet;
 import com.gauro.sfgpetclinic.services.CrudService;
+import com.gauro.sfgpetclinic.services.PetServices;
 
 import java.util.Set;
 
 /**
  * @author Chandra
  */
-public class PetServiceMap extends  AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class PetServiceMap extends  AbstractMapService<Pet,Long> implements PetServices {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
