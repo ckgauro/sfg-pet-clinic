@@ -59,10 +59,5 @@ public class DataLoader implements CommandLineRunner {
         log.info("Loaded Vets....");
 
 
-
-
-
-
-
     }
 }
