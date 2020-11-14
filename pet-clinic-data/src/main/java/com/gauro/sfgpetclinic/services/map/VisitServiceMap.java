@@ -1,7 +1,7 @@
 package com.gauro.sfgpetclinic.services.map;
 
-import com.gauro.sfgpetclinic.model.Pet;
-import com.gauro.sfgpetclinic.services.PetService;
+import com.gauro.sfgpetclinic.model.Visit;
+import com.gauro.sfgpetclinic.services.VisitService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -10,30 +10,29 @@ import java.util.Set;
  * @author Chandra
  */
 @Service
-public class PetServiceMap extends  AbstractMapService<Pet,Long> implements PetService {
+public class VisitServiceMap extends AbstractMapService<Visit,Long> implements VisitService {
     @Override
-    public Set<Pet> findAll() {
+    public Set<Visit> findAll() {
         return super.findAll();
     }
     @Override
-    public Pet findById(Long id) {
+    public Visit findById(Long id) {
         return super.findById(id);
     }
     @Override
-    public Pet save(Pet object) {
+    public Visit save(Visit object) {
         return super.save(object);
     }
+
     @Override
     public void deleteById(Long id) {
-        super.deleteById(id);
-
+         super.deleteById(id);
     }
+
     @Override
-    public void delete(Pet object) {
+    public void delete(Visit object) {
         super.delete(object);
-
     }
-
 
 
 

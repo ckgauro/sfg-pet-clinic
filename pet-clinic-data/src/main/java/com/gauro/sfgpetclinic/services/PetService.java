@@ -8,6 +8,6 @@ import java.util.Set;
 /**
  * @author Chandra
  */
-public interface PetServices extends CrudService<Pet, Long>{
+public interface PetService extends CrudService<Pet, Long>{
 
 }

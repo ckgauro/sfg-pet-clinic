@@ -1,12 +1,13 @@
 package com.gauro.sfgpetclinic.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
  * @author Chandra
  */
 public class Vet extends Person{
-    private Set<Speciality> specialityies;
+    private Set<Speciality> specialityies=new HashSet<>();
 
     public Set<Speciality> getSpecialityies() {
         return specialityies;
