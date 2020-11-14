@@ -17,14 +17,14 @@ public class DataLoader implements CommandLineRunner {
     private  final OwnerService ownerService;
     private final VetServices vetServices;
     private final PetTypeService petTypeService;
-    private final SpecialtyService specialtyService;
+    private final SpecialtiesService specialtiesService;
     private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetServices vetServices, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
+    public DataLoader(OwnerService ownerService, VetServices vetServices, PetTypeService petTypeService, SpecialtiesService specialtiesService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetServices = vetServices;
         this.petTypeService = petTypeService;
-        this.specialtyService = specialtyService;
+        this.specialtiesService = specialtiesService;
         this.visitService = visitService;
     }
 //    public DataLoader(){
@@ -47,15 +47,15 @@ public class DataLoader implements CommandLineRunner {
         log.info(" 20=====>");
         Speciality radiology=new Speciality();
         radiology.setDescription("Radiology");
-        Speciality savedRadiology=specialtyService.save(radiology);
+        Speciality savedRadiology= specialtiesService.save(radiology);
         log.info(" 30=====>");
         Speciality surgery=new Speciality();
         surgery.setDescription("Surgery");
-        Speciality savedSurgery=specialtyService.save(surgery);
+        Speciality savedSurgery= specialtiesService.save(surgery);
         log.info(" 40=====>");
         Speciality dentistry=new Speciality();
         dentistry.setDescription("Dentistry");
-        Speciality savedDentistry=specialtyService.save(dentistry);
+        Speciality savedDentistry= specialtiesService.save(dentistry);
         log.info(" 50=====>");
 
 
