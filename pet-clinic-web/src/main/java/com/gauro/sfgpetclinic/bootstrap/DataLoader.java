@@ -17,14 +17,14 @@ public class DataLoader implements CommandLineRunner {
     private  final OwnerService ownerService;
     private final VetServices vetServices;
     private final PetTypeService petTypeService;
-    private final SpecialtiesService specialtiesService;
+    private final SpecialtyService specialtyService;
     private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetServices vetServices, PetTypeService petTypeService, SpecialtiesService specialtiesService, VisitService visitService) {
+    public DataLoader(OwnerService ownerService, VetServices vetServices, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetServices = vetServices;
         this.petTypeService = petTypeService;
-        this.specialtiesService = specialtiesService;
+        this.specialtyService = specialtyService;
         this.visitService = visitService;
     }
 //    public DataLoader(){
@@ -36,7 +36,17 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         log.info(" Data load started=====>");
+        int count=petTypeService.findAll().size();
+        if(count==0){
+            loadData();
+        }
 
+
+
+
+    }
+
+    private void loadData() {
         PetType dog=new PetType();
         dog.setName("Dog");
         PetType savedDogPetType=petTypeService.save(dog);
@@ -47,20 +57,20 @@ public class DataLoader implements CommandLineRunner {
         log.info(" 20=====>");
         Speciality radiology=new Speciality();
         radiology.setDescription("Radiology");
-        Speciality savedRadiology= specialtiesService.save(radiology);
+        Speciality savedRadiology= specialtyService.save(radiology);
         log.info(" 30=====>");
         Speciality surgery=new Speciality();
         surgery.setDescription("Surgery");
-        Speciality savedSurgery= specialtiesService.save(surgery);
+        Speciality savedSurgery= specialtyService.save(surgery);
         log.info(" 40=====>");
         Speciality dentistry=new Speciality();
         dentistry.setDescription("Dentistry");
-        Speciality savedDentistry= specialtiesService.save(dentistry);
+        Speciality savedDentistry= specialtyService.save(dentistry);
         log.info(" 50=====>");
 
 
         Owner owner1=new Owner();
-       // owner1.setId(1L);
+        // owner1.setId(1L);
         owner1.setFirstName("Chandra");
         owner1.setLastName("Gauro");
         owner1.setAddress("123 Cheery st");
@@ -83,7 +93,7 @@ public class DataLoader implements CommandLineRunner {
 
         log.info(" 70=====>");
         Owner owner2=new Owner();
-       // owner2.setId(2L);
+        // owner2.setId(2L);
         owner2.setFirstName("Ankush");
         owner2.setLastName("Hero");
         owner2.setAddress("2 Mahendra st");
@@ -105,26 +115,22 @@ public class DataLoader implements CommandLineRunner {
         visitService.save(catVisit);
 
 
-
-
         log.info("Loaded Owners.....");
 
         Vet vet1=new Vet();
-       // vet1.setId(1L);
+        // vet1.setId(1L);
         vet1.setFirstName("Ravi");
         vet1.setLastName("Ave");
         vet1.getSpecialityies().add(savedRadiology);
         vetServices.save(vet1);
 
         Vet vet2=new Vet();
-       // vet2.setId(2L);
+        // vet2.setId(2L);
         vet2.setFirstName("Sam");
         vet2.setLastName("Porter");
         vet2.getSpecialityies().add(savedSurgery);
         vetServices.save(vet2);
 
         log.info("Loaded Vets....");
-
-
     }
 }

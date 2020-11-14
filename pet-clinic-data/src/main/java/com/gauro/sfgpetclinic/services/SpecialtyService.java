@@ -5,5 +5,5 @@ import com.gauro.sfgpetclinic.model.Speciality;
 /**
  * @author Chandra
  */
-public interface SpecialtiesService extends CrudService<Speciality,Long> {
+public interface SpecialtyService extends CrudService<Speciality,Long> {
 }
