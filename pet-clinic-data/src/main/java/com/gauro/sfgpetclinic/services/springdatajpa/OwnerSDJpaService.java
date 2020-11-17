@@ -19,7 +19,6 @@ import java.util.Set;
  * @author Chandra
  */
 @Slf4j
-@Primary
 @Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService  implements OwnerService {
@@ -61,6 +60,9 @@ public class OwnerSDJpaService  implements OwnerService {
 
     @Override
     public Owner save(Owner object) {
+        log.info("OwnerSDJpaService is called ################");
+        log.info("###############");
+
         return ownerRepository.save(object);
     }
 

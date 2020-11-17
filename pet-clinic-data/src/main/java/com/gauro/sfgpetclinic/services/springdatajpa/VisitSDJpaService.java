@@ -13,7 +13,6 @@ import java.util.Set;
 /**
  * @author Chandra
  */
-@Primary
 @Service
 @Profile("springdatajpa")
 public class VisitSDJpaService implements VisitService {
