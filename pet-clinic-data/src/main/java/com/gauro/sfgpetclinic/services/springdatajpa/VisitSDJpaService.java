@@ -1,9 +1,7 @@
 package com.gauro.sfgpetclinic.services.springdatajpa;
 
-import com.gauro.sfgpetclinic.model.Vet;
 import com.gauro.sfgpetclinic.model.Visit;
 import com.gauro.sfgpetclinic.repositories.VisitRepository;
-import com.gauro.sfgpetclinic.services.VetServices;
 import com.gauro.sfgpetclinic.services.VisitService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
