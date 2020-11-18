@@ -247,8 +247,12 @@ Lect 110 -Lect 128  ---Done
 
 Lect 145-158 --Done
 
-# Section 9 Onging
+# Section 9 Done
+
+Lect 167-168 
+# Section 10 Ongoing
 
 Lect 167-168 
 
+        
         
