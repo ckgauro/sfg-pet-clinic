@@ -1,5 +1,7 @@
 package com.gauro.sfgpetclinic.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +9,12 @@ import java.util.Set;
 /**
  * @author Chandra
  */
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name="vets")
 public class Vet extends Person{
@@ -18,11 +26,11 @@ public class Vet extends Person{
     )
     private Set<Speciality> specialityies=new HashSet<>();
 
-    public Set<Speciality> getSpecialityies() {
-        return specialityies;
-    }
-
-    public void setSpecialityies(Set<Speciality> specialityies) {
-        this.specialityies = specialityies;
-    }
+//    public Set<Speciality> getSpecialityies() {
+//        return specialityies;
+//    }
+//
+//    public void setSpecialityies(Set<Speciality> specialityies) {
+//        this.specialityies = specialityies;
+//    }
 }
