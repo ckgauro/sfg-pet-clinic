@@ -251,8 +251,8 @@ Lect 145-158 --Done
 
 Lect 167-168 
 # Section 10 Ongoing
-
-Lect 167-168 
+Lect 184 --Ongoing
+Lect 182-189 
 
         
         
